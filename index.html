@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PROJECT ZANDO</title>
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- font style -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <!-- font awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="https://kit.fontawesome.com/9152de16db.js" crossorigin="anonymous"></script>
+
+<body>
+    <nav class="navigation">
+        <nav class="menu">
+            <div class="menu-left">
+                <ul>
+                    <li>Men</li>
+                    <li>Women</li>
+                    <li>Boys</li>
+                    <li>Girls</li>
+                </ul>
+            </div>
+            <div class="menu-center">
+                <img src="https://zandokh.com/images/ZANDO-NEW-LOGO-2025.png" alt="">
+            </div>
+            <div class="menu-right">
+                <ul>
+                    <li>
+                        <div class="btn-search">
+                            <span>
+                                <i class="fa-solid fa-magnifying-glass"></i>
+                            </span>
+                            <input type="text" placeholder="Search...">
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-bell"></i>
+                    </li>
+                    <li>
+                        <i class="fa-regular fa-heart"></i>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-suitcase"></i>
+                    </li>
+                    <li> login </li>
+                    <li> register </li>
+                </ul>
+            </div>
+        </nav>
+    </nav>
+    iujhgfdsx   fbfsgb
+    <div class="slide">
+        <swiper-container class="mySwiper" 
+            space-between="30" 
+            centered-slides="true" 
+            autoplay-delay="2500"
+            autoplay-disable-on-interaction="false">
+            <swiper-slide>
+                <div class="item-slid">
+                    <img src="../images/10Year80OFF 2160x1066.jpg" alt="" />
+
+                    <div class="btn-container">
+                        <button>Shop men</button>
+                        <button>Shop women</button>
+                    </div>
+                </div>
+            </swiper-slide>
+            <swiper-slide>
+                <div class="item-slid">
+                    <img src="../images/70OFFPB_Main (2160x1066)0.jpg" alt="" />
+
+                    <div class="btn-container">
+                        <button>A</button>
+                        <button>B</button>
+                    </div>
+                </div>
+            </swiper-slide>
+
+            <div class="autoplay-progress" slot="container-end">
+                <svg viewBox="0 0 48 48">
+                    <circle cx="24" cy="24" r="20"></circle>
+                </svg>
+                <span></span>
+            </div>
+        </swiper-container>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        const progressCircle = document.querySelector(".autoplay-progress svg");
+        const progressContent = document.querySelector(".autoplay-progress span");
+
+        const swiperEl = document.querySelector("swiper-container");
+        swiperEl.addEventListener("autoplaytimeleft", (e) => {
+            const [swiper, time, progress] = e.detail;
+            progressCircle.style.setProperty("--progress", 1 - progress);
+            progressContent.textContent = `${Math.ceil(time / 1000)}s`;
+        });
+    </script>
+
+
+</body>
+
+</html>
