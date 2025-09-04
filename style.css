@@ -7,7 +7,7 @@
 body {
     font-size: 18px;
     font-family: "Noto Sans", sans-serif;
-    background-color: #eee;
+    background-color: #fff;
 }
 
 a {
@@ -20,12 +20,16 @@ ul {
 
 .navigation {
     width: 100%;
-    background-color: #eee;
+    background-color: #fff;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
-.menu {
+.container-width {
     width: 90%;
+    margin: auto;
+}
+
+.menu {
     height: 50px;
     margin: auto;
     display: flex;
@@ -139,7 +143,6 @@ ul {
 
 /* slide */
 .slide {
-    width: 90%;
     margin: auto;
     /* background-color: aqua; */
     height: 800px;
@@ -163,14 +166,178 @@ ul {
 .btn-container>button {
     padding: 15px 25px;
     border-radius: 5px;
-    border: 3px solid whitesmoke;
-    box-shadow: white (0, 0, 0, 0.35) 0px 5px 15px;
+    border: 3px solid #fff;
+    box-shadow: rgb(57, 57, 57) (0, 0, 0, 0.35) 0px 5px 15px;
     outline: none;
     background-color: transparent;
     color: white;
+    border-radius: 4px;
     font-weight: bold;
     font-size: 20px;
     text-transform: uppercase;
+    transition: all 0.3s;
+}
+
+.btn-container>button:hover {
+    transform: translateY(-3px);
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+/* brand */
+.brand {
+    height: 150px;
+
+    margin-top: 10px;
+    display: flex;
+    gap: 1%;
+}
+
+.box-brand {
+    width: 15.83%;
+    height: 100%;
+}
+
+.box-brand>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* lift */
+
+.life-style {
+    height: 630px;
+    display: flex;
+    gap: 1.25%;
+}
+
+.box-life-style {
+    width: 30%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.box-life-style>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.life-style-bottom {
+    display: flex;
+    gap: 1%;
+    height: 900px;
+    margin-top: 15px;
+}
+
+.life-style-bottom-box {
+    width: 49.5%;
+    background-color: rebeccapurple;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.life-style-bottom-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* slid items */
+.container-item {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.container-txt-slid {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slid-items {
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 1%;
+}
+
+.items {
+    width: 20%;
+    height: 770px;
+    position: relative;
+    /* background-color: mediumslateblue; */
+}
+
+.items>div {
+    height: 100%;
+    width: 100%;
+}
+
+.img-item {
+    height: 80%;
+    width: 100%;
+}
+
+.img-item>img {
+    height: 100%;
+    width: 100%;
+    /* object-fit: cover; */
+}
+
+.description {
+    width: 100%;
+    height: 25%;
+    background-color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 7px;
+}
+
+.txt {
+    color: black;
+}
+
+.txt ul {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.txt ul li {
+    height: 18px;
+    width: 18px;
+    border-radius: 3px;
+}
+
+.txt ul li:first-child {
+    background-color: black;
+}
+
+.txt ul li:nth-child(2) {
+    background-color: rgb(153, 220, 18);
+}
+
+.txt ul li:last-child {
+    background-color: red;
+}
+
+.dis {
+    background-color: red;
+    position: absolute;
+    padding: 3px 8px;
+    left: 10px;
+    top: 10px;
+    color: whitesmoke;
+    border-radius: 5px;
+}
+
+.txt-brand {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    
 }
 
 swiper-container {
